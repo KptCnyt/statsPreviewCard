@@ -60,6 +60,7 @@ body {
     height: auto;
     float: left;
     font font-family: 'Lexend Deca', tahoma;
+    line-height:5px;
 }
 .big { 
     color:white;
