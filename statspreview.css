@@ -9,11 +9,26 @@ body {
     justify-content: center;
     align-items: center;
 }
+@media (max-width:550px) {
+    #background {
+        width: 100%;
+        height: 900px;
+    }
+}
 #card {
     background-color: hsl(244, 38%, 16%);
     width: 1120px;
     height: 446px;
     border-radius: 10px;
+}
+@media (max-width:550px) {
+    #card {
+        width: 90%;
+        height:800px;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
 }
 .info {
     width: 390px;
@@ -24,11 +39,26 @@ body {
     padding-right: 120px;
     font-family: 'Inter';
 }
+@media (max-width:550px) {
+    .info {
+        width: 90%;
+        height: 500px;
+        padding-right: 0;
+        padding-left: 20px;
+        text-align: center;
+    }
+}
 #bgimage {
     width: 540px;
     height: 446px;
     background-color:rgba(100, 0, 150, 0.5) ;
     border-radius: 0 10px 10px 0;
+}
+@media (max-width:550px) {
+    #bgimage {
+        height: 100%;
+        width: 100%;
+    }
 }
 #image {
     border-radius: 0 10px 10px 0;
@@ -37,14 +67,25 @@ body {
     float: left;
     background-image: url(image-header-desktop.jpg);
 }
+@media (max-width:550px) {
+    #image {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+}
 #title {
     color: white;
     font-size: 38px;
 }
+@media (max-width:550px) {
+    #title {
+        font-size: 25px;
+    }
+}
 #insights {
     color: hsl(277, 64%, 61%);
 }
-#body {
+#body1 {
     color: hsla(0, 0%, 100%, 0.75);
     font-weight: 400;
     font-size: 15px;
@@ -54,6 +95,14 @@ body {
     width:390px ;
     height: auto;
 }
+@media (max-width:550px) {
+    #stats {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+}
 .box {
     margin-top: 25px;
     width: 33%;
@@ -62,9 +111,14 @@ body {
     font font-family: 'Lexend Deca', tahoma;
     line-height:5px;
 }
+@media (max-width:550px) {
+    .box {
+        margin-top: 10px;
+    }
+}
 .big { 
     color:white;
-    font-size: 25px;
+    font-size: 15px;
 }
 .small {
     color: hsla(0, 0%, 100%, 0.6);
